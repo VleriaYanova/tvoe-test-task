@@ -1,0 +1,76 @@
+@use './../../ui/variables.scss' as v;
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: v.$base-bg-color;
+    height: 76px;
+    padding: 0 2em;
+    color: v.$no-active-font;
+    font-size: 16px;
+}
+
+.header_left_side {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.header_nav_links {
+    display: flex;
+    gap: 16px;
+}
+
+.nav_link {
+    transition: all 0.5s;
+
+    &:hover {
+        color: v.$font-color;
+    }
+}
+
+.header_gray_btn {
+    border-radius: 12px;
+    padding: 5px 15px;
+    background-color: v.$btn-bg;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    transition: all 0.5s;
+    color: v.$font-color;
+
+    &:hover {
+        background-color: v.$btn-bg-hover;
+    }
+}
+
+.header_buy_btn {
+    color: v.$base-bg-color;
+    border-radius: 12px;
+    padding: 5px 15px;
+    background: linear-gradient(0.11turn, rgba(242, 244, 82, 1), rgba(180, 253, 100, 1));
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    transition: all 0.5s;
+
+    &:hover {
+        background: linear-gradient(0.11turn, rgb(245, 248, 49), rgb(152, 247, 50));
+    }
+}
+
+.header_login {
+    display: flex;
+    align-items: center;
+    color: v.$no-active-font;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+        color: v.$font-color;
+    }
+}
